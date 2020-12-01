@@ -16,7 +16,7 @@ steps:
 - name: 'gcr.io/cloud-builders/kubectl'
   args:
   - 'create'
-  - 'deployment
+  - 'deployment'
   - '${_DEPLOYMENTNAME}'
   - 'image=gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
   env:
